@@ -11,7 +11,7 @@ DIA=$(date +%d%m%y)
 
 exists=$(find ../../srv/backup -maxdepth 5 -name '*.tar.gz' | wc -lc -l)
 
-ls /import/*.zip 2>/dev/null| wc -l
+ls ../../srv/backup*.tar.gz 2>/dev/null| wc -l
 
 cd ../../srv/samba 
 

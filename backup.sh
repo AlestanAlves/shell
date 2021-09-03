@@ -9,7 +9,7 @@ echo "Start BACKUP ------------------------------------"
 
 DIA=$(date +%d%m%y)
 
-count=$(find ../../srv/backup -maxdepth 5 -name '*.tar.gz' | wc -lc -l)
+exists=$(find ../../srv/backup -maxdepth 5 -name '*.tar.gz' | wc -lc -l)
 
 cd ../../srv/samba 
 

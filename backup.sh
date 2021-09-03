@@ -15,7 +15,6 @@ cd ../../srv/samba
 
 if [ ${total} -eq "5" ] ; then
   echo "Existe 5 arquivos em backup a ultima data foi excluida"
-  
 elif [ -e "bkp_samba_$dia.tar.gz" ] ; then
   echo "O arquivo existe, entao nao foi criado um novo"
 else

@@ -10,10 +10,10 @@ DIA=$(date +%d%m%y)
 cd ../../srv/samba 
 
 if [ -e "bkp_samba_$DIA.tar.gz" ] ; then
-  echo "o arquivo existe"
+  echo "O arquivo existe, entao nao foi criado um novo"
 
 else
-  echo "o arquivo não existe"
+  echo "O arquivo não existe e foi guardado na pasta backup"
   tar -zcvf bkp_samba_$DIA.tar.gz .
   cp bkp_samba_$DIA.tar.gz ../backup/ 
 fi

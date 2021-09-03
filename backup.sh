@@ -23,6 +23,3 @@ else
   tar -zcvf bkp_samba_$dia.tar.gz .
   cp bkp_samba_$DIA.tar.gz ../backup/ 
 fi
-
-
-https://www.educba.com/if-condition-in-shell-script/

@@ -7,20 +7,18 @@
 
 echo "Start BACKUP ------------------------------------"
 
-DIA=$(date +%d%m%y)
+dia=$(date +%d%m%y)
 
-exists=$(find ../../srv/backup -maxdepth 5 -name '*.tar.gz' | wc -lc -l)
-
-ls ../../srv/backup/*.tar.gz 2>/dev/null| wc -l
+total=$(ls ../../srv/backup/*.tar.gz 2>/dev/null| wc -l)
 
 cd ../../srv/samba 
 
 if [ exists == 5 ] ; then
   echo "Existe 5 arquivos em backup a ultima data foi excluida"
-elif [ -e "bkp_samba_$DIA.tar.gz" ] ; then
+elif [ -e "bkp_samba_$dia.tar.gz" ] ; then
   echo "O arquivo existe, entao nao foi criado um novo"
 else
   echo "O arquivo não existe e foi guardado na pasta backup"
-  tar -zcvf bkp_samba_$DIA.tar.gz .
+  tar -zcvf bkp_samba_$dia.tar.gz .
   cp bkp_samba_$DIA.tar.gz ../backup/ 
 fi

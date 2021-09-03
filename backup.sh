@@ -5,6 +5,8 @@
 #
 #
 
+echo "Start BACKUP ------------------------------------"
+
 DIA=$(date +%d%m%y)
 
 cd ../../srv/samba 

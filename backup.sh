@@ -17,8 +17,3 @@ else
   tar -zcvf bkp_samba_$DIA.tar.gz .
   cp bkp_samba_$DIA.tar.gz ../backup/ 
 fi
- 
-
-#tar -zcvf bkp_samba_$DIA.tar.gz .
- 
-#cp bkp_samba_$DIA.tar.gz ../backup/ 

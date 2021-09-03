@@ -13,7 +13,8 @@ exists=$(find ../../srv/backup -maxdepth 5 -name '*.tar.gz' | wc -lc -l)
 
 cd ../../srv/samba 
 
-if [ exists =! 5 ] ; then
+if [ exists == 5 ] ; then
+  echo "Existe 5 arquivos em backup a ultima data foi excluida"
 elif [ -e "bkp_samba_$DIA.tar.gz" ] ; then
   echo "O arquivo existe, entao nao foi criado um novo"
 else

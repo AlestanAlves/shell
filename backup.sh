@@ -7,5 +7,10 @@
 
 DIA=$(date +%d%m%y)
 
-tar -zcvf bkp_samba_$DIA.tar.gz /srv/samba/
+cd ../../srv/samba 
 
+tar -zcvf bkp_samba_$DIA.tar.gz .
+
+mkdir ../backup/ 
+ 
+cp bkp_samba_$DIA.tar.gz ../backup/ 

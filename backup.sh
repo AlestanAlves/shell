@@ -1,4 +1,4 @@
-!/bin/bash  
+#!/bin/bash  
 #Script de backup
 #Autor: Alestan
 #RM: 85046

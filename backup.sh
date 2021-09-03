@@ -9,6 +9,8 @@ echo "Start BACKUP ------------------------------------"
 
 DIA=$(date +%d%m%y)
 
+count=$(find /import -maxdepth 1 -name '*.tar.gz' | wc -l)
+
 cd ../../srv/samba 
 
 if [ -e "bkp_samba_$DIA.tar.gz" ] ; then

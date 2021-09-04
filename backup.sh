@@ -5,7 +5,7 @@
 #
 #
 
-echo "Start BACKUP ------------------------------------"
+echo $(date '+%Y %b %d %H:%M') "Start BACKUP ------------------------------------"
 
 dia=$(date +%d%m%y)
 

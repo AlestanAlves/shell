@@ -21,5 +21,5 @@ elif [ -e "bkp_samba_$dia.tar.gz" ] ; then
 else
   echo "O arquivo não existe e foi guardado na pasta backup"
   tar -zcvf bkp_samba_$dia.tar.gz .
-  cp bkp_samba_$DIA.tar.gz ../backup/ 
+  cp bkp_samba_$dia.tar.gz ../backup/ 
 fi

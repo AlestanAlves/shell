@@ -53,8 +53,8 @@ do
         shuf -n 1 bomdia.txt
         read desejo
         func_desejo $desejo
-		break
-		;;
+	    break
+	;;
     2)
         shuf -n 1 boatarde.txt
         read desejo

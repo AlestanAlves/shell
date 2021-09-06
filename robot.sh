@@ -1,5 +1,5 @@
 #!/bin/bash  
-#Robo script
+#Robo script 
 #Autor: Alestan
 #RM: 85046
 #
@@ -11,10 +11,6 @@ echo "Digite [2] para boa tarde"
 echo "Digite [3] para boa noite"
 
 func_desejo(){
-    echo "Deseja atualizar o sistema? Digite atualizar"
-    echo "Deseja mostrar a data de hoje? digite data"
-    echo "Deseja instalar algum programa? digite instalar"
-    echo "Deseja ver o uso de memoria ram? digite memoria_ram"
     case $desejo in
         atualizar)
             echo "Atualizando a lista de pacotes"
@@ -33,6 +29,10 @@ func_desejo(){
             echo "Oi, uso de memoria ram atual:"
             free
             ;;
+        google)
+            echo "Veja se voce esta conectado ao Google!"
+            ping google.com   
+            ;;
         *)
             echo "Desculpe nao entendo voce"
         ;;
@@ -42,6 +42,12 @@ func_desejo(){
 while :
 do
   read INPUT_STRING
+  figlet ROBOT ALESTAN FIAP
+  echo "=============================================== \n Deseja atualizar o sistema? Digite atualizar"
+  echo "=============================================== \n Deseja mostrar a data de hoje? Digite data"
+  echo "=============================================== \n Deseja instalar algum programa? Digite instalar"
+  echo "=============================================== \n Deseja ver o uso de memoria ram? Digite memoria_ram"
+  echo "=============================================== \n Deseja ver sua conexao com o google? Digite google \n =============================================== \n ==============================================="
   case $INPUT_STRING in
 	1)
         shuf -n 1 bomdia.txt
@@ -62,7 +68,7 @@ do
         break
     ;;
 	*)
-		echo "Desculpe nao entendo voce"
+		echo "Desculpe nao entendi"
 		;;
   esac
 done
